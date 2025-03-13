@@ -1,0 +1,299 @@
+/* Reset y Configuraciones Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-primary: #0077be;
+    --color-secondary: #4fc3f7;
+    --color-background: #f4f6f9;
+    --color-text: #333;
+    --color-white: #ffffff;
+    --color-accent: #2ecc71;
+    --transition: all 0.3s ease;
+    --shadow-light: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-medium: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    overflow-x: hidden;
+}
+
+/* Scrollbar Personalizada */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 5px;
+}
+
+/* Navbar Mejorado */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 5%;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-light);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+/* Efecto de desaparición al desplazar */
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.navbar .logo i {
+    margin-right: 10px;
+    color: var(--color-accent);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 0.9rem;
+    position: relative;
+    padding-bottom: 5px;
+    transition: var(--transition);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-white);
+    padding: 0 5%;
+    position: relative;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 700px;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow-medium);
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+/* Secciones Generales */
+section {
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 100px;
+    height: 3px;
+    background-color: var(--color-primary);
+    transform: translateX(-50%);
+}
+
+/* Tarjetas Generales */
+.stats-container,
+.consequences-container,
+.tips-container,
+.policies-container,
+.innovation-container,
+.collaboration-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.stat-card,
+.consequence-card,
+.tip-card,
+.policy-card,
+.innovation-card,
+.collaboration-card {
+    flex: 1;
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow-medium);
+    transition: var(--transition);
+}
+
+.stat-card:hover,
+.consequence-card:hover,
+.tip-card:hover,
+.policy-card:hover,
+.innovation-card:hover,
+.collaboration-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Iconos */
+.stat-card i,
+.consequence-card i,
+.tip-card i,
+.policy-card i,
+.innovation-card i,
+.collaboration-card i {
+    font-size: 3rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.social-links a {
+    color: var(--color-white);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: var(--color-accent);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 3%;
+    }
+
+    .nav-links {
+        display: none; /* Menú móvil futuro */
+    }
+
+    .stats-container,
+    .consequences-container,
+    .tips-container,
+    .policies-container,
+    .innovation-container,
+    .collaboration-container {
+        flex-direction: column;
+    }
+
+    .stat-card,
+    .consequence-card,
+    .tip-card,
+    .policy-card,
+    .innovation-card,
+    .collaboration-card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Animaciones Globales */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}

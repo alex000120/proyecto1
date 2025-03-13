@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AguaTucumán | Gestión Integral del Recurso Hídrico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-water"></i>
+            <span>AguaTucumán</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#estadisticas">Estadísticas</a></li>
+            <li><a href="#consecuencias">Consecuencias</a></li>
+            <li><a href="#consejos">Consejos</a></li>
+            <li><a href="#politicas">Políticas</a></li>
+            <li><a href="#innovacion">Innovación</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>El Agua es Vida en Tucumán</h1>
+            <p class="subtitle">Cada gota cuenta. Actuemos ahora para evitar la escasez.</p>
+            <div class="water-animation"></div>
+            <button  class="cta-button" 
+            onclick="window.location.href='/sig/index2.html'"><i class="fab fa-youtube"></i>Aprende Más</button>
+        </div>
+    </section>
+
+    <section id="estadisticas" class="stats">
+        <h2>El Agua en Tucumán (2025)</h2>
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number" data-target="40">0</div>
+                <p>Porcentaje de reducción en reservas de agua</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="500">0</div>
+                <p>Miles de personas afectadas por la escasez</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="60">0</div>
+                <p>Porcentaje de pérdida en cultivos debido a la sequía</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="consecuencias" class="consequences">
+        <h2>Consecuencias de la Escasez de Agua</h2>
+        <div class="consequences-container">
+            <div class="consequence-card">
+                <i class="fas fa-tint-slash"></i>
+                <h3>Salud Pública</h3>
+                <p>Aumento de enfermedades relacionadas con la falta de agua potable.</p>
+            </div>
+            <div class="consequence-card">
+                <i class="fas fa-seedling"></i>
+                <h3>Agricultura</h3>
+                <p>Pérdida de cultivos y disminución de la producción de alimentos.</p>
+            </div>
+            <div class="consequence-card">
+                <i class="fas fa-industry"></i>
+                <h3>Economía</h3>
+                <p>Impacto negativo en industrias y aumento del desempleo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="consejos" class="tips">
+        <h2>Consejos para Ahorrar Agua en Tucumán</h2>
+        <div class="tips-container">
+            <div class="tip-card">
+                <i class="fas fa-shower"></i>
+                <h3>Ducha Corta</h3>
+                <p>Reduce el tiempo de ducha a 5 minutos y ahorra hasta 100L por día.</p>
+            </div>
+            <div class="tip-card">
+                <i class="fas fa-faucet"></i>
+                <h3>Repara Fugas</h3>
+                <p>Una fuga puede desperdiciar hasta 30L de agua al día.</p>
+            </div>
+            <div class="tip-card">
+                <i class="fas fa-tint"></i>
+                <h3>Reutiliza</h3>
+                <p>Aprovecha el agua de lluvia para regar plantas y limpiar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="politicas" class="water-policies">
+        <h2>Políticas de Gestión Hídrica en Tucumán</h2>
+        <div class="policies-container">
+            <div class="policy-card">
+                <i class="fas fa-balance-scale"></i>
+                <h3>Marco Legal</h3>
+                <p>Ley Provincial de Gestión Integral del Agua</p>
+                <div class="policy-details">
+                    <span class="status approved">Aprobada 2024</span>
+                    <span class="impact high">Alto Impacto</span>
+                </div>
+            </div>
+            <div class="policy-card">
+                <i class="fas fa-landmark"></i>
+                <h3>Regulaciones</h3>
+                <p>Normativas de Conservación y Uso Responsable</p>
+                <div class="policy-details">
+                    <span class="status progress">En Implementación</span>
+                    <span class="impact moderate">Impacto Moderado</span>
+                </div>
+            </div>
+            <div class="policy-card">
+                <i class="fas fa-user-shield"></i>
+                <h3>Sanciones</h3>
+                <p>Multas por Desperdicio de Recursos Hídricos</p>
+                <div class="policy-details">
+                    <span class="status proposed">Próximamente</span>
+                    <span class="impact pending">Pendiente</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Continuará en el siguiente mensaje -->
+
+<section id="educacion" class="water-education">
+    <h2>Programa de Educación Hídrica</h2>
+    <div class="education-container">
+        <div class="education-track">
+            <div class="track-item escolar">
+                <i class="fas fa-school"></i>
+                <h3>Educación Escolar</h3>
+                <p>Módulos de concientización en escuelas</p>
+                <ul>
+                    <li>Curso básico de 20 horas</li>
+                    <li>Material didáctico interactivo</li>
+                    <li>Actividades prácticas</li>
+                </ul>
+            </div>
+            <div class="track-item universitario">
+                <i class="fas fa-university"></i>
+                <h3>Nivel Universitario</h3>
+                <p>Diplomados y especializaciones</p>
+                <ul>
+                    <li>Maestría en Gestión Hídrica</li>
+                    <li>Cursos de especialización</li>
+                    <li>Investigación aplicada</li>
+                </ul>
+            </div>
+            <div class="track-item comunidad">
+                <i class="fas fa-users"></i>
+                <h3>Comunidad</h3>
+                <p>Programas de capacitación ciudadana</p>
+                <ul>
+                    <li>Talleres comunitarios</li>
+                    <li>Webinars gratuitos</li>
+                    <li>Campañas de comunicación</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="innovacion" class="innovation-hub">
+    <h2>Hub de Innovación Hídrica</h2>
+    <div class="innovation-container">
+        <div class="innovation-card startup">
+            <i class="fas fa-lightbulb"></i>
+            <h3>StartUps de Agua</h3>
+            <p>Incubadora de proyectos tecnológicos</p>
+            <div class="startup-stats">
+                <span>5 Proyectos Activos</span>
+                <span>$300,000 en Inversión</span>
+            </div>
+        </div>
+        <div class="innovation-card research">
+            <i class="fas fa-flask"></i>
+            <h3>Investigación</h3>
+            <p>Líneas de desarrollo tecnológico</p>
+            <div class="research-areas">
+                <span>Desalinización</span>
+                <span>Purificación</span>
+                <span>Eficiencia</span>
+            </div>
+        </div>
+        <div class="innovation-card collaboration">
+            <i class="fas fa-network-wired"></i>
+            <h3>Colaboraciones</h3>
+            <p>Alianzas estratégicas con universidades</p>
+            <div class="partner-logos">
+                <img src="uni-tucuman.png" alt="UNT">
+                <img src="conicet.png" alt="CONICET">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="colaboracion-internacional" class="international-collaboration">
+    <h2>Colaboración Internacional</h2>
+    <div class="collaboration-container">
+        <div class="collaboration-card">
+            <img src="onu-water.png" alt="ONU Agua">
+            <h3>Programa de Naciones Unidas</h3>
+            <p>Estrategias globales de conservación</p>
+            <div class="collaboration-details">
+                <span class="funding">Financiamiento: $1.5M</span>
+                <span class="duration">Periodo: 2025-2030</span>
+            </div>
+        </div>
+        <div class="collaboration-card">
+            <img src="banco-mundial.png" alt="Banco Mundial">
+            <h3>Banco Mundial</h3>
+            <p>Inversión en infraestructura hídrica</p>
+            <div class="collaboration-details">
+                <span class="funding">Inversión: $5M</span>
+                <span class="duration">Proyectos Sostenibles</span>
+            </div>
+        </div>
+        <div class="collaboration-card">
+            <img src="union-europea.png" alt="Unión Europea">
+            <h3>Unión Europea</h3>
+            <p>Transferencia de tecnología verde</p>
+            <div class="collaboration-details">
+                <span class="funding">Cooperación Técnica</span>
+                <span class="duration">Convenio Marco</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="monitoreo-tiempo-real" class="real-time-monitoring">
+    <h2>Sistema de Monitoreo Hídrico en Tiempo Real</h2>
+    <div class="monitoring-dashboard">
+        <div class="dashboard-stats">
+            <div class="stat-panel reservas">
+                <i class="fas fa-water"></i>
+                <h3>Reservas Hídricas</h3>
+                <div class="stat-value">
+                    <span class="number" data-target="65">0</span>%
+                </div>
+                <p>Nivel actual de reservas</p>
+            </div>
+            <div class="stat-panel calidad">
+                <i class="fas fa-flask"></i>
+                <h3>Calidad del Agua</h3>
+                <div class="quality-indicator">
+                    <span class="status good">Óptima</span>
+                </div>
+                <p>Índice de potabilidad</p>
+            </div>
+            <div class="stat-panel consumo">
+                <i class="fas fa-chart-line"></i>
+                <h3>Consumo Diario</h3>
+                <div class="stat-value">
+                    <span class="number" data-target="320">0</span> L/persona
+                </div>
+                <p>Promedio en Tucumán</p>
+            </div>
+        </div>
+        <div class="monitoring-map">
+            <img src="tucuman-water-monitoring-map.jpg" alt="Mapa de Monitoreo Hídrico">
+            <div class="map-legend">
+                <div class="legend-item">
+                    <span class="color-box critical"></span> Crítico
+                </div>
+                <div class="legend-item">
+                    <span class="color-box warning"></span> Alerta
+                </div>
+                <div class="legend-item">
+                    <span class="color-box normal"></span> Normal
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Continuará en el siguiente mensaje -->
+
+<section id="ciudadania-activa" class="active-citizenship">
+    <h2>Programa de Ciudadanía Activa</h2>
+    <div class="citizenship-container">
+        <div class="citizenship-track">
+            <div class="track-milestone reporting">
+                <i class="fas fa-bell"></i>
+                <h3>Sistema de Reportes</h3>
+                <p>Plataforma digital para reportar:</p>
+                <ul>
+                    <li>Fugas de agua</li>
+                    <li>Zonas de desperdicio</li>
+                    <li>Problemas de infraestructura</li>
+                </ul>
+                <div class="milestone-stats">
+                    <span>250 Reportes Mensuales</span>
+                </div>
+            </div>
+            <div class="track-milestone community">
+                <i class="fas fa-users"></i>
+                <h3>Brigadas Comunitarias</h3>
+                <p>Programas de acción ciudadana:</p>
+                <ul>
+                    <li>Limpieza de cuencas</li>
+                    <li>Jornadas de concientización</li>
+                    <li>Voluntariado ambiental</li>
+                </ul>
+                <div class="milestone-stats">
+                    <span>500 Voluntarios Activos</span>
+                </div>
+            </div>
+            <div class="track-milestone education">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Embajadores del Agua</h3>
+                <p>Programa de formación:</p>
+                <ul>
+                    <li>Capacitación en escuelas</li>
+                    <li>Líderes comunitarios</li>
+                    <li>Educadores ambientales</li>
+                </ul>
+                <div class="milestone-stats">
+                    <span>100 Embajadores Formados</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="economia-circular" class="water-circular-economy">
+    <h2>Economía Circular del Agua</h2>
+    <div class="economy-container">
+        <div class="economy-stage collection">
+            <i class="fas fa-sync"></i>
+            <h3>Recolección</h3>
+            <p>Sistemas de captación pluvial y reciclaje</p>
+            <div class="stage-stats">
+                <span>30% Agua Reciclada</span>
+            </div>
+        </div>
+        <div class="economy-stage treatment">
+            <i class="fas fa-filter"></i>
+            <h3>Tratamiento</h3>
+            <p>Plantas de purificación de última generación</p>
+            <div class="stage-stats">
+                <span>95% Eficiencia de Purificación</span>
+            </div>
+        </div>
+        <div class="economy-stage reutilization">
+            <i class="fas fa-recycle"></i>
+            <h3>Reutilización</h3>
+            <p>Aplicaciones en agricultura e industria</p>
+            <div class="stage-stats">
+                <span>40% Agua Reutilizada</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="centro-datos" class="research-data-center">
+    <h2>Centro de Datos e Investigación Hídrica</h2>
+    <div class="research-container">
+        <div class="research-line climate">
+            <i class="fas fa-cloud-sun-rain"></i>
+            <h3>Investigación Climática</h3>
+            <p>Estudios de impacto del cambio climático</p>
+            <div class="research-details">
+                <span>3 Proyectos Activos</span>
+                <span>$250,000 en Financiamiento</span>
+            </div>
+        </div>
+        <div class="research-line technology">
+            <i class="fas fa-satellite"></i>
+            <h3>Desarrollo Tecnológico</h3>
+            <p>Innovaciones en gestión hídrica</p>
+            <div class="research-details">
+                <span>5 Patentes en Desarrollo</span>
+                <span>Colaboración Internacional</span>
+            </div>
+        </div>
+        <div class="research-line prediction">
+            <i class="fas fa-chart-area"></i>
+            <h3>Modelado Predictivo</h3>
+            <p>Simulaciones de escenarios hídricos</p>
+            <div class="research-details">
+                <span>Modelo Estadístico Avanzado</span>
+                <span>Precisión: 92%</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="compromiso" class="pledge">
+    <h2>Haz tu Compromiso</h2>
+    <div class="pledge-form">
+        <input type="text" id="nombre" placeholder="Tu nombre">
+        <textarea id="compromiso" placeholder="Escribe tu compromiso para ahorrar agua"></textarea>
+        <button id="enviar-compromiso">Hacer Compromiso</button>
+    </div>
+    <div class="compromisos-counter">
+        <span id="total-compromisos">0</span>
+        <p>tucumanos comprometidos</p>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; 2025 AguaTucumán. Todos los derechos reservados.</p>
+            <p>Contacto: info@aguatucuman.org | Tel: +54 381 123 4567</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

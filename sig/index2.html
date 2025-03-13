@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AguaTucumán | Centro de Aprendizaje</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/sig/styles2.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Contenido del navbar -->
+    </nav>
+
+    <section class="learning-center">
+        <div class="learning-hero">
+            <h1>Centro Integral de Aprendizaje Hídrico</h1>
+            <p>Descubre, Comprende y Transforma tu Relación con el Agua</p>
+        </div>
+
+        <!-- Módulos de Aprendizaje -->
+        <div class="learning-modules">
+            <div class="module-selector">
+                <button class="module-btn active" data-module="introduccion">Introducción</button>
+                <button class="module-btn" data-module="ciclo-agua">Ciclo del Agua</button>
+                <button class="module-btn" data-module="problemas">Problemas Hídricos</button>
+                <button class="module-btn" data-module="soluciones">Soluciones</button>
+            </div>
+
+            <!-- Contenido Dinámico de Módulos -->
+            <div class="module-content" id="introduccion">
+                <div class="module-header">
+                    <h2>Introducción al Mundo del Agua</h2>
+                </div>
+                <div class="module-body">
+                    <div class="content-video">
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/VIDEO_ID" 
+                            title="Introducción al Agua" 
+                            frameborder="0">
+                        </iframe>
+                    </div>
+                    <div class="content-text">
+                        <h3>¿Qué Aprenderás?</h3>
+                        <ul>
+                            <li>Importancia del agua</li>
+                            <li>Distribución global</li>
+                            <li>Situación en Tucumán</li>
+                        </ul>
+                        <div class="info-graphic">
+                            <img src="infografia-introduccion.jpg" alt="Infografía Introducción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module-content hidden" id="ciclo-agua">
+                <div class="module-header">
+                    <h2>Ciclo Hidrológico en Tucumán</h2>
+                </div>
+                <div class="module-body">
+                    <div class="content-video">
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/VIDEO_ID" 
+                            title="Ciclo del Agua" 
+                            frameborder="0">
+                        </iframe>
+                    </div>
+                    <div class="content-interactive">
+                        <div class="ciclo-stages">
+                            <div class="stage">
+                                <i class="fas fa-cloud"></i>
+                                <h4>Evaporación</h4>
+                                <p>Transformación del agua líquida a vapor</p>
+                            </div>
+                            <div class="stage">
+                                <i class="fas fa-cloud-rain"></i>
+                                <h4>Precipitación</h4>
+                                <p>Retorno del agua a la superficie</p>
+                            </div>
+                            <div class="stage">
+                                <i class="fas fa-mountain"></i>
+                                <h4>Escorrentía</h4>
+                                <p>Flujo de agua por superficies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module-content hidden" id="problemas">
+                <div class="module-header">
+                    <h2>Problemáticas Hídricas</h2>
+                </div>
+                <div class="module-body">
+                    <div class="problem-grid">
+                        <div class="problem-card">
+                            <i class="fas fa-water"></i>
+                            <h3>Sequía</h3>
+                            <p>Impacto en agricultura y disponibilidad</p>
+                        </div>
+                        <div class="problem-card">
+                            <i class="fas fa-industry"></i>
+                            <h3>Contaminación</h3>
+                            <p>Fuentes y consecuencias</p>
+                        </div>
+                        <div class="problem-card">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Cambio Climático</h3>
+                            <p>Efectos en recursos hídricos</p>
+                        </div>
+                    </div>
+                    <div class="content-infographic">
+                        <img src="problemas-hidricos.jpg" alt="Infografía Problemas">
+                    </div>
+                </div>
+            </div>
+
+            <div class="module-content hidden" id="soluciones">
+                <div class="module-header">
+                    <h2>Soluciones Innovadoras</h2>
+                </div>
+                <div class="module-body">
+                    <div class="solutions-grid">
+                        <div class="solution-card">
+                            <i class="fas fa-recycle"></i>
+                            <h3>Tratamiento de Aguas</h3>
+                            <p>Técnicas de purificación y reciclaje</p>
+                        </div>
+                        <div class="solution-card">
+                            <i class="fas fa-leaf"></i>
+                            <h3>Tecnologías Verdes</h3>
+                            <p>Innovaciones sostenibles</p>
+                        </div>
+                        <div class="solution-card">
+                            <i class="fas fa-users"></i>
+                            <h3>Educación Comunitaria</h3>
+                            <p>Cambio de cultura hídrica</p>
+                        </div>
+                    </div>
+                    <div class="interactive-quiz">
+                        <h3>Pon a Prueba tu Conocimiento</h3>
+                        <div class="quiz-container">
+                            <!-- Quiz interactivo -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recursos Adicionales -->
+        <div class="additional-resources">
+            <h2>Recursos Complementarios</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>Guías Descargables</h3>
+                    <a href="#" class="download-btn">Descargar</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certificaciones</h3>
+                    <a href="#" class="info-btn">Más Información</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor de Quiz -->
+<div class="quiz-container">
+    <div class="quiz-header">
+        <h2>Test de Conocimiento Hídrico</h2>
+        <div class="quiz-progress">
+            <div class="progress-bar"></div>
+            <span class="current-question">0/5</span>
+        </div>
+    </div>
+
+    <div class="quiz-body">
+        <div class="question-container">
+            <h3 id="question-text">Pregunta del quiz</h3>
+            <div class="answer-options">
+                <button class="answer-btn" data-correct="false">Opción 1</button>
+                <button class="answer-btn" data-correct="false">Opción 2</button>
+                <button class="answer-btn" data-correct="false">Opción 3</button>
+                <button class="answer-btn" data-correct="false">Opción 4</button>
+            </div>
+        </div>
+
+        <div class="feedback-container hidden">
+            <div class="feedback-icon"></div>
+            <h4 id="feedback-title">Resultado</h4>
+            <p id="feedback-text">Explicación</p>
+            <button id="next-question">Siguiente Pregunta</button>
+        </div>
+    </div>
+
+    <div class="quiz-footer">
+        <div class="score-tracker">
+            <span>Puntuación: <span id="current-score">0</span>/5</span>
+        </div>
+        <button id="finish-quiz" class="hidden">Finalizar Quiz</button>
+    </div>
+</div>
+
+<div id="final-results" class="hidden">
+    <div class="results-container">
+        <h2>Resultados del Quiz</h2>
+        <div class="result-details">
+            <div class="score-circle">
+                <span id="final-score">0</span>
+                <small>Puntos</small>
+            </div>
+            <div class="performance-rating">
+                <h3 id="rating-title">Nivel de Conocimiento</h3>
+                <p id="rating-description">Descripción de tu desempeño</p>
+            </div>
+        </div>
+        <div class="result-actions">
+            <button id="review-answers">Revisar Respuestas</button>
+            <button id="restart-quiz">Intentar de Nuevo</button>
+        </div>
+    </div>
+</div>
+
+    </section>
+
+    <footer>
+        <!-- Contenido del footer -->
+    </footer>
+
+    <script>
+        // JavaScript para manejo de módulos
+        document.querySelectorAll('.module-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Ocultar todos los módulos
+                document.querySelectorAll('.module-content').forEach(module => {
+                    module.classList.add('hidden');
+                });
+
+                // Deseleccionar todos los botones
+                document.querySelectorAll('.module-btn').forEach(b => {
+                    b.classList.remove('active');
+                });
+
+                // Mostrar módulo seleccionado
+                const moduleId = btn.getAttribute('data-module');
+                document.getElementById(moduleId).classList.remove('hidden');
+                btn.classList.add('active');
+            });
+        });
+        class WaterQuiz {
+    constructor(questions) {
+        this.questions = questions;
+        this.currentQuestionIndex = 0;
+        this.score = 0;
+        this.selectedAnswers = [];
+
+        this.questionText = document.getElementById('question-text');
+        this.answerButtons = document.querySelectorAll('.answer-btn');
+        this.progressBar = document.querySelector('.progress-bar');
+        this.currentQuestionDisplay = document.querySelector('.current-question');
+        this.scoreDisplay = document.getElementById('current-score');
+        this.feedbackContainer = document.querySelector('.feedback-container');
+        this.nextQuestionBtn = document.getElementById('next-question');
+        this.finishQuizBtn = document.getElementById('finish-quiz');
+        this.finalResultsContainer = document.getElementById('final-results');
+        
+        this.initEventListeners();
+        this.loadQuestion();
+    }
+
+    initEventListeners() {
+        this.answerButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => this.selectAnswer(e));
+        });
+
+        this.nextQuestionBtn.addEventListener('click', () => this.nextQuestion());
+        this.finishQuizBtn.addEventListener('click', () => this.finishQuiz());
+    }
+
+    loadQuestion() {
+        const currentQuestion = this.questions[this.currentQuestionIndex];
+        
+        this.questionText.textContent = currentQuestion.text;
+        this.answerButtons.forEach((btn, index) => {
+            btn.textContent = currentQuestion.answers[index];
+            btn.dataset.correct = currentQuestion.answers[index] === currentQuestion.correctAnswer;
+            btn.classList.remove('correct', 'incorrect');
+        });
+
+        this.updateProgressBar();
+    }
+
+    selectAnswer(e) {
+        const selectedButton = e.target;
+        const isCorrect = selectedButton.dataset.correct === 'true';
+
+        this.answerButtons.forEach(btn => {
+            btn.disabled = true;
+            if (btn.dataset.correct === 'true') {
+                btn.classList.add('correct');
+            }
+        });
+
+        selectedButton.classList.add(isCorrect ? 'correct' : 'incorrect');
+
+        if (isCorrect) {
+            this.score++;
+            this.scoreDisplay.textContent = this.score;
+        }
+
+        this.showFeedback(isCorrect);
+    }
+
+    showFeedback(isCorrect) {
+        const currentQuestion = this.questions[this.currentQuestionIndex];
+        
+        this.feedbackContainer.classList.remove('hidden');
+        const feedbackTitle = document.getElementById('feedback-title');
+        const feedbackText = document.getElementById('feedback-text');
+
+        feedbackTitle.textContent = isCorrect ? '¡Correcto!' : 'Respuesta Incorrecta';
+        feedbackText.textContent = currentQuestion.explanation;
+
+        if (this.currentQuestionIndex === this.questions.length - 1) {
+            this.finishQuizBtn.classList.remove('hidden');
+            this.nextQuestionBtn.classList.add('hidden');
+        }
+    }
+
+    nextQuestion() {
+        this.currentQuestionIndex++;
+        this.feedbackContainer.classList.add('hidden');
+        
+        if (this.currentQuestionIndex < this.questions.length) {
+            this.loadQuestion();
+        }
+    }
+
+    finishQuiz() {
+        this.finalResultsContainer.classList.remove('hidden');
+        document.getElementById('final-score').textContent = this.score;
+        
+        this.setPerformanceRating();
+    }
+
+    setPerformanceRating() {
+        const ratingTitle = document.getElementById('rating-title');
+        const ratingDescription = document.getElementById('rating-description');
+
+        if (this.score <= 2) {
+            ratingTitle.textContent = "Nivel Principiante";
+            ratingDescription.textContent = "Necesitas aprender más sobre recursos hídricos.";
+        } else if (this.score <= 4) {
+            ratingTitle.textContent = "Nivel Intermedio";
+            ratingDescription.textContent = "Buen conocimiento, pero hay espacio para mejorar.";
+        } else {
+            ratingTitle.textContent = "Nivel Experto";
+            ratingDescription.textContent = "¡Felicidades! Tienes un excelente conocimiento.";
+        }
+    }
+}
+
+// Preguntas del Quiz
+const waterQuizQuestions = [
+    {
+        text: "¿Cuál es el porcentaje aproximado de agua dulce en el planeta?",
+        answers: ["2.5%", "10%", "50%", "70%"],
+        correctAnswer: "2.5%",
+        explanation: "Solo el 2.5% del agua en la Tierra es dulce, siendo un recurso muy escaso."
+    },
+    {
+        text: "¿Qué es el ciclo hidrológico?",
+        answers: [
+            "Proceso de contaminación del agua",
+            "Circulación continua del agua en la Tierra", 
+            "Método de potabilización", 
+            "Sistema de riego"
+        ],
+        correctAnswer: "Circulación continua del agua en la Tierra",
+        explanation: "El ciclo hidrológico describe el movimiento continuo del agua entre la atmósfera, la superficie terrestre y los océanos."
+    }
+    // Añadir más preguntas
+];
+
+// Inicializar Quiz
+const waterQuiz = new WaterQuiz(waterQuizQuestions);
+
+    </script>
+</body>
+</html>
